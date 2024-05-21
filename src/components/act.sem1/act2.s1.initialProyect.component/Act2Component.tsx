@@ -1,9 +1,9 @@
 import { useState } from "react";
-import './OneComponent.css'
+import './Act2Component.css'
 
-function OneComponent() {
-  const [text, addset] = useState(0);
-  const [text2, addset2] = useState(0);
+function InitialProyect() {
+  const [text, addset] = useState('');
+  const [text2, addset2] = useState('');
 
   const textOnChange = (event: any) => {
     addset(event.target.value);
@@ -14,17 +14,17 @@ function OneComponent() {
   };
 
   return (
-    <>
+    <div className="card">
       <div className="row input">
         <input type="text input" value={text} onChange={textOnChange} />
       </div>
       <div className="row">
-        <button onClick={updateText}>Actualizar</button>
+        <button className="button" onClick={updateText}>Actualizar</button>
       </div>
       <p>Texto input: {text}</p>
       <p>Texto actualizado: {text2}</p>
-    </>
+    </div>
   );
 }
 
-export default OneComponent;
+export default InitialProyect;
