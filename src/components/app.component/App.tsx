@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import InitialProyect from "../act.sem1/act2.s1.initialProyect.component/Act2Component";
 import GalleryProyect from "../act.sem1/act3.s1.gallery.component/Act2Components";
 import DevelopmentEnvironment from "../act.sem1/act1.s1.component/Act1Components";
+import PersonsComponent from "../act.sem2/act1.s2.person/PersonsComponent";
+
 import "./App.css";
 
 function App() {
@@ -59,7 +61,9 @@ function App() {
                 className="accordion-collapse collapse"
                 data-bs-parent="#accordionExample"
               >
-                <div className="accordion-body">Sin informacion</div>
+                <div className="accordion-body">
+                  <Link to="/person">Persons</Link>
+                </div>
               </div>
             </div>
             <div className="accordion-item">
@@ -91,6 +95,7 @@ function App() {
               <Route path="/" element={<DevelopmentEnvironment />} />
               <Route path="/initial" element={<InitialProyect />} />
               <Route path="/gallery" element={<GalleryProyect />} />
+              <Route path="/person" element={<PersonsComponent />} />
             </Routes>
           </div>
         </div>
