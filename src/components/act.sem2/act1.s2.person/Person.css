@@ -1,0 +1,27 @@
+.modify {
+  margin: auto;
+}
+
+.card {
+  border: 1px white solid !important;
+  background-color: white !important;
+}
+
+.listbtn {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.listbtn button {
+  width: 120px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.team {
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+}

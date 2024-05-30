@@ -1,19 +1,19 @@
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
 
 .col1 {
   background-color: #eaeaea;
-  position: absolute;
+  border: 1px #444746 solid !important;
+  position: fixed;
   height: 100%;
   top: 0;
   left: 0;
 }
 
 .col2 {
-  background-color: #adadad;
   position: absolute;
   height: 100%;
   top: 0;
@@ -22,8 +22,4 @@ nav {
 
 .accordion {
   margin-top: 10px;
-}
-
-.accordion-button {
-  background-color: #efefef !important;
 }
